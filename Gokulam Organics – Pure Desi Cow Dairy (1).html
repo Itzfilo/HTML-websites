@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gokulam Organics – Pure Desi Cow Dairy</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7ef;--surface:#fff;--ink:#1d2a21;--muted:#5d6b61;--green:#1f4a33;--green2:#2d6a49;--gold:#e5a823;--line:#dfe3d3;--tint:#eaf0dc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--surface:#1a251e;--ink:#eef2e6;--muted:#a3b0a5;--green:#8fd1a6;--green2:#6fbd8b;--line:#2b3a30;--tint:#1f2e24;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a15;--surface:#1a251e;--ink:#eef2e6;--muted:#a3b0a5;--green:#8fd1a6;--green2:#6fbd8b;--line:#2b3a30;--tint:#1f2e24;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 Mukta,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-size:1.35rem;color:var(--green);text-decoration:none}
+nav a{margin-right:20px;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--green)}
+.btn{background:var(--green);color:var(--bg);border:0;border-radius:999px;padding:11px 22px;font:700 1rem Mukta,sans-serif;cursor:pointer}
+.btn:hover{background:var(--green2)}
+.btn.gold{background:var(--gold);color:#1d2a21}
+.btn.ghost{background:none;color:var(--green);border:1.5px solid var(--green)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{padding:72px 0 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);color:var(--green);letter-spacing:-.02em}
+.hero p{max-width:46ch;margin:22px 0 28px;color:var(--muted);font-size:1.12rem}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.pot{aspect-ratio:1;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;background:var(--tint);display:grid;place-items:center;position:relative;overflow:hidden;animation:morph 9s ease-in-out infinite alternate}
+.pot span{font-size:7.5rem;filter:drop-shadow(0 12px 14px rgba(0,0,0,.15))}
+.pot::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:var(--surface);opacity:.7;border-radius:50% 50% 0 0/30% 30% 0 0;animation:wave 5s ease-in-out infinite alternate}
+@keyframes morph{to{border-radius:55% 45% 45% 55%/45% 55% 45% 55%}}
+@keyframes wave{to{height:42%}}
+.strip{background:var(--green);color:var(--bg)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:12px 36px;justify-content:space-between;padding:18px 20px;font-weight:500}
+section{padding:72px 0}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--green);margin-bottom:10px}
+.sub{color:var(--muted);max-width:56ch;margin-bottom:28px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.chip{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 18px;border-radius:999px;cursor:pointer;font:500 .95rem Mukta,sans-serif}
+.chip[aria-pressed="true"]{background:var(--green);color:var(--bg);border-color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.card .img{height:150px;display:grid;place-items:center;font-size:4.2rem;background:var(--tint)}
+.card .b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1.2rem}
+.card small{color:var(--muted)}
+.card .f{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:10px}
+.price{font:700 1.2rem Fraunces,serif;color:var(--green)}
+.add{padding:8px 16px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.vals{display:grid;gap:16px}
+.vals div{background:var(--surface);border-left:4px solid var(--gold);padding:14px 18px;border-radius:0 14px 14px 0}
+.vals b{display:block;font-family:Fraunces,serif}
+.contact{background:var(--tint)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.cgrid div{background:var(--surface);padding:20px;border-radius:16px;border:1px solid var(--line)}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.92rem;text-align:center}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25}
+.fab .btn{box-shadow:0 8px 24px rgba(0,0,0,.25);padding:14px 22px}
+.count{background:var(--gold);color:#1d2a21;border-radius:999px;padding:1px 9px;margin-left:8px;font-size:.9rem}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:30;display:none}
+.scrim.on{display:block}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--bg);z-index:31;transform:translateX(105%);transition:transform .3s;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:1.4rem}
+.x{background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--ink);line-height:1}
+.db{flex:1;overflow:auto;padding:18px 22px}
+.item{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.item .e{font-size:2rem}
+.item .n{flex:1;line-height:1.3}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--green);background:none;color:var(--green);font-weight:700;cursor:pointer}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+label{display:block;font-weight:500;font-size:.92rem;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sum{padding:16px 22px calc(16px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--surface)}
+.sum .r{display:flex;justify-content:space-between;margin-bottom:4px;color:var(--muted)}
+.sum .t{color:var(--ink);font:700 1.2rem Fraunces,serif;margin:6px 0 12px}
+.sum .btn{width:100%}
+.note{color:#b3261e;font-size:.9rem;min-height:1.2em;margin-bottom:6px}
+.ok{text-align:center;padding:40px 10px}
+.ok .big{font-size:4rem}
+.pay{display:flex;gap:8px;flex-wrap:wrap}
+.pay label{display:flex;gap:6px;align-items:center;margin:0;border:1.5px solid var(--line);padding:8px 12px;border-radius:10px;cursor:pointer;background:var(--surface)}
+.pay input{width:auto}
+.rv{opacity:0;transform:translateY(32px) scale(.97);transition:opacity .75s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .75s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+header{transition:box-shadow .3s}header.sc{box-shadow:0 6px 24px rgba(0,0,0,.08)}
+@media (max-width:760px){.hero,.story{grid-template-columns:1fr}.pot{max-width:280px}nav{display:none}.hero{padding-top:40px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Gokulam Organics</a>
+<nav><a href="#shop">Shop</a><a href="#story">Our farm</a><a href="#contact">Contact</a></nav>
+<button class="btn ghost" id="openCart2">Cart (<span id="c2">0</span>)</button>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Milk the way your grandmother remembered it.</h1>
+<p>Desi gir cow milk, bilona ghee and fresh paneer from our free-grazing herd near Nashik. Milked at dawn, bottled in glass, at your door by 7 am.</p>
+<div class="row"><a class="btn gold" href="#shop">Order fresh today</a><a class="btn ghost" href="#story">Meet our cows</a></div>
+</div>
+<div class="pot" aria-hidden="true"><span>🐄</span></div>
+</div>
+<div class="strip"><div class="wrap"><span>100% certified organic</span><span>A2 milk from Gir cows</span><span>No preservatives, no antibiotics</span><span>Free delivery above ₹499</span></div></div>
+
+<section id="shop"><div class="wrap">
+<h2>Today’s dairy</h2>
+<p class="sub">Everything is made in small batches. Prices include GST. Tap add and we’ll plan your delivery slot at checkout.</p>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="story" style="background:var(--tint)"><div class="wrap story">
+<div>
+<h2>Twenty-two cows, each with a name.</h2>
+<p class="sub" style="margin-bottom:0">Our Gir and Sahiwal cows graze on chemical-free pasture, drink borewell water and are never hurried. We milk by hand, feed calves first, and make ghee the slow bilona way: curd churned, butter simmered over a wood fire.</p>
+</div>
+<div class="vals">
+<div><b>Pasture first</b>Open grazing, millet and jowar feed, no hormones.</div>
+<div><b>Glass, not plastic</b>Returnable bottles. Hand them back on your next delivery.</div>
+<div><b>Lab tested weekly</b>Every batch is checked for purity and fat content.</div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Talk to us</h2>
+<p class="sub">Sample details for testing only.</p>
+<div class="cgrid">
+<div><b>Call or WhatsApp</b><br>+91 98765 43210</div>
+<div><b>Farm shop</b><br>Plot 12, Gokul Wadi,<br>Nashik, Maharashtra 422001</div>
+<div><b>Email</b><br>hello@gokulam-demo.in</div>
+<div><b>Hours</b><br>Daily, 5:30 am to 8 pm<br>Landline: 0253 245 0198</div>
+</div>
+</div></section>
+</main>
+<footer>© 2026 Gokulam Organics. Demo website with sample numbers and products.</footer>
+
+<div class="fab"><button class="btn" id="openCart">View cart <span class="count" id="c1">0</span></button></div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your cart" aria-hidden="true">
+<div class="dh"><h3 id="dt">Your cart</h3><button class="x" id="close" aria-label="Close cart">×</button></div>
+<div class="db" id="db"></div>
+<div class="sum" id="sum"></div>
+</aside>
+
+<script>
+const P=[
+{id:1,n:"A2 Gir cow milk",d:"1 litre glass bottle",p:90,c:"Milk",e:"🥛"},
+{id:2,n:"Sahiwal cow milk",d:"500 ml glass bottle",p:50,c:"Milk",e:"🥛"},
+{id:3,n:"Bilona desi ghee",d:"500 g glass jar",p:1150,c:"Ghee & butter",e:"🫙"},
+{id:4,n:"Bilona desi ghee",d:"250 g glass jar",p:620,c:"Ghee & butter",e:"🫙"},
+{id:5,n:"Hand-churned butter",d:"200 g",p:240,c:"Ghee & butter",e:"🧈"},
+{id:6,n:"Fresh paneer",d:"250 g, made this morning",p:140,c:"Cheese & curd",e:"🧀"},
+{id:7,n:"Set dahi",d:"400 g earthen pot",p:80,c:"Cheese & curd",e:"🍶"},
+{id:8,n:"Buttermilk (chaas)",d:"500 ml, cumin and curry leaf",p:40,c:"Cheese & curd",e:"🥤"},
+{id:9,n:"Kesar shrikhand",d:"250 g, saffron and cardamom",p:190,c:"Sweets",e:"🍮"},
+{id:10,n:"Milk peda",d:"250 g box, no added sugar syrup",p:260,c:"Sweets",e:"🍬"}
+];
+const cats=["All",...new Set(P.map(x=>x.c))];
+let cat="All",cart={},step="cart";
+const $=id=>document.getElementById(id),inr=n=>"₹"+n.toLocaleString("en-IN");
+function drawFilters(){$("filters").innerHTML=cats.map(c=>`<button class="chip" aria-pressed="${c==cat}" data-c="${c}">${c}</button>`).join("")}
+function drawGrid(){$("grid").innerHTML=P.filter(x=>cat=="All"||x.c==cat).map(x=>`<article class="card"><div class="img">${x.e}</div><div class="b"><h3>${x.n}</h3><small>${x.d}</small><div class="f"><span class="price">${inr(x.p)}</span><button class="btn add" data-a="${x.id}">Add</button></div></div></article>`).join("")}
+$("filters").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;drawFilters();drawGrid();reveal()}};
+$("grid").onclick=e=>{const a=e.target.dataset.a;if(a){cart[a]=(cart[a]||0)+1;count();e.target.textContent="Added";setTimeout(()=>e.target.textContent="Add",700)}};
+const sub=()=>Object.entries(cart).reduce((s,[i,q])=>s+P.find(x=>x.id==i).p*q,0);
+const total=()=>Object.values(cart).reduce((a,b)=>a+b,0);
+function count(){$("c1").textContent=$("c2").textContent=total();if($("drawer").classList.contains("on"))render()}
+function open(v){$("drawer").classList.toggle("on",v);$("scrim").classList.toggle("on",v);$("drawer").setAttribute("aria-hidden",!v);if(v){step="cart";render()}}
+["openCart","openCart2"].forEach(i=>$(i).onclick=()=>open(true));$("close").onclick=$("scrim").onclick=()=>open(false);
+document.addEventListener("keydown",e=>{if(e.key=="Escape")open(false)});
+function fees(){const s=sub();return{s,d:s>=499||s==0?0:40}}
+function render(){
+const db=$("db"),sm=$("sum"),{s,d}=fees();
+if(step=="done")return;
+if(step=="cart"){
+$("dt").textContent="Your cart";
+if(!total()){db.innerHTML='<div class="empty">Your cart is empty.<br>Add some fresh milk or ghee to begin.</div>';sm.innerHTML="";return}
+db.innerHTML=Object.entries(cart).map(([i,q])=>{const x=P.find(y=>y.id==i);return`<div class="item"><span class="e">${x.e}</span><div class="n"><b>${x.n}</b><br><small>${x.d} · ${inr(x.p)}</small></div><div class="qty"><button data-m="${i}" aria-label="Fewer">−</button>${q}<button data-p="${i}" aria-label="More">+</button></div></div>`}).join("");
+sm.innerHTML=`<div class="r"><span>Subtotal</span><span>${inr(s)}</span></div><div class="r"><span>Delivery</span><span>${d?inr(d):"Free"}</span></div><div class="r t"><span>Total</span><span>${inr(s+d)}</span></div>${d?`<small style="color:var(--muted)">Add ${inr(499-s)} more for free delivery.</small><br><br>`:""}<button class="btn" id="go">Continue to delivery</button>`;
+$("go").onclick=()=>{step="form";render()};
+}else{
+$("dt").textContent="Delivery details";
+const t=new Date(Date.now()+864e5).toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"short"});
+db.innerHTML=`<label>Full name</label><input id="fn" autocomplete="name">
+<div class="two"><div><label>Phone</label><input id="ph" inputmode="numeric" maxlength="10" placeholder="10 digits"></div><div><label>Pincode</label><input id="pc" inputmode="numeric" maxlength="6" placeholder="422001"></div></div>
+<label>Address</label><textarea id="ad" rows="2" placeholder="Flat, building, street, landmark"></textarea>
+<label>Delivery slot</label><select id="sl"><option>Tomorrow, ${t} · 6 to 8 am</option><option>Tomorrow, ${t} · 8 to 10 am</option><option>Tomorrow, ${t} · 5 to 7 pm</option></select>
+<label>Payment</label><div class="pay"><label><input type="radio" name="py" value="UPI" checked>UPI</label><label><input type="radio" name="py" value="Cash on delivery">Cash on delivery</label><label><input type="radio" name="py" value="Card">Card</label></div>`;
+sm.innerHTML=`<div class="note" id="nt"></div><div class="r t"><span>Total to pay</span><span>${inr(s+d)}</span></div><button class="btn" id="pl">Place order</button><button class="btn ghost" id="bk" style="margin-top:8px">Back to cart</button>`;
+$("bk").onclick=()=>{step="cart";render()};
+$("pl").onclick=place;
+}}
+$("db").onclick=e=>{const m=e.target.dataset.m,p=e.target.dataset.p;if(p)cart[p]++;if(m){cart[m]--;if(!cart[m])delete cart[m]}if(p||m)count()};
+function place(){
+const n=$("fn").value.trim(),ph=$("ph").value.trim(),pc=$("pc").value.trim(),ad=$("ad").value.trim();
+const err=!n?"Enter your name.":!/^[6-9]\d{9}$/.test(ph)?"Enter a valid 10-digit mobile number.":!/^\d{6}$/.test(pc)?"Enter a 6-digit pincode.":ad.length<8?"Enter your full delivery address.":"";
+$("nt").textContent=err;if(err)return;
+const id="GO"+Math.floor(10000+Math.random()*90000),slot=$("sl").value,py=document.querySelector('input[name=py]:checked').value,{s,d}=fees();
+step="done";$("dt").textContent="Order placed";
+$("db").innerHTML=`<div class="ok"><div class="big">🎉</div><h3>Thank you, ${n.split(" ")[0]}!</h3><p style="margin:12px 0;color:var(--muted)">Order <b>#${id}</b> is confirmed. We’ll send updates to ${ph.slice(0,2)}XXXXXX${ph.slice(-2)}.</p><p><b>${slot}</b><br>${ad}, ${pc}<br>Pay by ${py}: <b>${inr(s+d)}</b></p></div>`;
+$("sum").innerHTML='<button class="btn" id="fin">Continue shopping</button>';
+$("fin").onclick=()=>{cart={};count();open(false)};
+}
+let io;
+function reveal(){
+if(!('IntersectionObserver' in window))return;
+io=io||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+const groups=['.hero>div','.strip span','h2','.sub','.filters','.card','.story>div','.vals div','.cgrid div'];
+groups.forEach(sel=>{const kids={};document.querySelectorAll(sel).forEach(el=>{if(el.classList.contains('rv'))return;const k=el.parentElement,i=kids[k]=(kids[k]||0);kids[k]=i+1;el.style.setProperty('--d',Math.min(i,5)*.08+'s');el.classList.add('rv');io.observe(el)})});
+}
+reveal();
+addEventListener('scroll',()=>document.querySelector('header').classList.toggle('sc',scrollY>10),{passive:true});
+drawFilters();drawGrid();reveal();
+</script>
+</body>
+</html>
